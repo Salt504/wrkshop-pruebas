@@ -24,7 +24,8 @@ pipeline {
                 steps {
                     container('pod-eclipse') {
                         echo '-=- compiling project -=-'
-                        sh './mvnw clean compile'
+//                          sh './mvnw clean compile'
+                            sh 'echo "Funciona'
                     }
                 }
             }
